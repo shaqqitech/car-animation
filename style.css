@@ -21,17 +21,32 @@
     position: relative;
     width: 300px;
     height: 200px;
-    background: #c9c6c6;
+    background: #fff;
     border-radius: 25px;
     border-bottom: 10px solid black;
     overflow: hidden;
+}
+
+img{
+    width: 100px;
+    top: -2px;
+    animation: bird 8s ease infinite;
+}
+
+@keyframes bird {
+    0%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(200px);
+    }
 }
 
 .cloud{
     position: absolute;
     z-index: 0;
     font-size: 85px;
-    top: 5px;
+    top: -15px;
     animation: clouding 10s linear infinite;
 }
 
